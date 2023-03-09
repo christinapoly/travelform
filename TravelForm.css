@@ -1,0 +1,10 @@
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: left;
+    background-image: url(./pineapples-g84605c190_1920.jpg); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;}
+.title {
+    font-family: Arial, Helvetica, sans-serif; 
+    text-decoration: underline;}
