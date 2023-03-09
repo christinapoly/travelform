@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Reservation Form</title>
+<link rel="stylesheet" href="./TravelForm.css">
+</head>
+
+
+<h1 class="title">Travel Reservation Form </h1>
+
+<body>
+
+
+    <table>
+        <form>
+
+            <tr>
+                <td><label for="name">*First Name:</label></td> 
+                <td><input type="text" id="name" required pattern="[A-Za-z]+"></td>
+            </tr>
+            
+            <tr>
+                <td><label for="surname">*Last Name:</label></td>
+                <td><input type="text" id="surname" required pattern="[A-Za-z]+"></td>
+            </tr>
+            
+            <tr>
+                <td><label for="email">*E-mail Address:</label></td>
+                <td><input type="text" id="email" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="phonenumber">*Phone Number:</label></td>
+                <td><input type="text" id="phonenumber" required pattern="[0-9]+"></td>
+            </tr>
+        
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><input type="email" id="address"></td>
+            </tr>
+
+            <tr>
+                <td><label for="departure">*Date of Departure:</label></td>
+                <td><input type="date" id="departure" required min="2023-08-01"></td>
+                <td><label for="arrival">*Date of Arrival:</label></td>
+                <td><input type="date" id="arrival" required min="2023-08-01"></td>
+            </tr>
+
+            <tr>
+                <td><label for="people">*Number of People Travelling:</label></td>
+                <td><input type="number" id="people" required min="1" max="10"></td>
+            </tr>
+
+            <tr>
+                <td><label for="transport">I would prefer to travel by:</label></td>
+                 <td>
+                    <select id="transport">
+                        <option value="car">Car</option>
+                        <option value="plane">Plane</option>
+                        <option value="bus">Bus</option>
+                        <option value="train">Train</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Do you have any pets travelling with you?</label></td>
+                <td>
+                    <input type="radio" id="yespets" name="pets">
+                    <label for="yespets">Yes</label>
+                    <input type="radio" id="nopets" name="pets" checked>
+                    <label for="nopets">No</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="comments">Comments:</label></td>
+                <td><textarea id="comments" cols="30" rows="3"></textarea></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td><button onclick="Submitted">Submit</button></td>
+            </tr>
+            
+        </form>
+    </table>
+
+</body>
+</html>
